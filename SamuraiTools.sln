@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamuraiTools", "SamuraiTools\SamuraiTools.csproj", "{12EFB6B6-AA15-42BA-8F3B-6F1D15EF0349}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamuraiTools.Wpf", "SamuraiTools.Wpf\SamuraiTools.Wpf.csproj", "{E4C0FBCA-C448-4E37-BE5F-D3B200F12917}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SamuraiTools.Forms", "SamuraiTools.Forms\SamuraiTools.Forms.vbproj", "{902474CB-E25B-4A80-8ECA-486A1E2CAF73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamuraiTools.OpenXml", "SamuraiTools.OpenXml\SamuraiTools.OpenXml.csproj", "{AF8B9FF2-D6CC-4815-9634-557E2888BACA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{D54A21C8-2E51-44A1-9A61-B0A36CE46DC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWpf", "TestWpf\TestWpf.csproj", "{A388A82F-5403-41AC-9CFC-713ED532C25D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamuraiTools.OpenXmlTests", "SamuraiTools.OpenXmlTests\SamuraiTools.OpenXmlTests.csproj", "{260D2A4B-0B9C-4D6C-AFA1-0D803A712432}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12EFB6B6-AA15-42BA-8F3B-6F1D15EF0349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12EFB6B6-AA15-42BA-8F3B-6F1D15EF0349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12EFB6B6-AA15-42BA-8F3B-6F1D15EF0349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12EFB6B6-AA15-42BA-8F3B-6F1D15EF0349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C0FBCA-C448-4E37-BE5F-D3B200F12917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C0FBCA-C448-4E37-BE5F-D3B200F12917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C0FBCA-C448-4E37-BE5F-D3B200F12917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C0FBCA-C448-4E37-BE5F-D3B200F12917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902474CB-E25B-4A80-8ECA-486A1E2CAF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902474CB-E25B-4A80-8ECA-486A1E2CAF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902474CB-E25B-4A80-8ECA-486A1E2CAF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902474CB-E25B-4A80-8ECA-486A1E2CAF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8B9FF2-D6CC-4815-9634-557E2888BACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8B9FF2-D6CC-4815-9634-557E2888BACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8B9FF2-D6CC-4815-9634-557E2888BACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8B9FF2-D6CC-4815-9634-557E2888BACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54A21C8-2E51-44A1-9A61-B0A36CE46DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54A21C8-2E51-44A1-9A61-B0A36CE46DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54A21C8-2E51-44A1-9A61-B0A36CE46DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54A21C8-2E51-44A1-9A61-B0A36CE46DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A388A82F-5403-41AC-9CFC-713ED532C25D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A388A82F-5403-41AC-9CFC-713ED532C25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A388A82F-5403-41AC-9CFC-713ED532C25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A388A82F-5403-41AC-9CFC-713ED532C25D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260D2A4B-0B9C-4D6C-AFA1-0D803A712432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260D2A4B-0B9C-4D6C-AFA1-0D803A712432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260D2A4B-0B9C-4D6C-AFA1-0D803A712432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260D2A4B-0B9C-4D6C-AFA1-0D803A712432}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {344F90B4-3BDF-494E-BF97-C227AFBB6A9D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+﻿1.1 - 12/9/2019
+added Forms.Utilities.PasteFromClipboard
+
+1.2 - 1/16/2020
+added Database namespace and SQLDBConnection class
+added StringUtility class with SplitCsv()
+
+2.0 - 4/12/2021
+changed language to c#.
+targeting .net standard 2.1.
+added Com namespace with ComHelper class.
+SQLDBConnection - removed query, dbAdapter, and dbDataSet. these cause problems when using a persistent connection in a multi-threaded environment.
+ - renamed to SqlDbConnection to conform to current naming convention.
+removed Forms namespace, will be a separate assembly.

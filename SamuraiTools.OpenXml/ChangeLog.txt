@@ -1,0 +1,25 @@
+﻿1.0.0.0 - 12/22/2020
+initial release build
+
+2.0.0.0 - 05/06/2021
+remade targeting .net standard 2.1.
+renamed OpenXML to OpenXml and BuiltinCellStyles to BuiltinCellStyle to conform to standard naming convention.
+created OpenXmlUtility class in OpenXml namespace, moved GetNodeIndex here.
+renamed old OpenXmlUtility class in Spreadsheet namespace to SpreadsheetUtility.
+moved BuiltinCellStyle enum into Spreadsheet root namespace.
+removed wrapper classes in favor of extension methods.
+added AddHyperlink for worksheets.
+WorksheetCollection now implements ICollection<Worksheet>.
+WorksheetCollection[string] indexer will return null if no Worksheet by that name.
+added WorksheetCollection[int] indexer.
+added ColumnExtension.AutoFit().
+rework of Range class, greatly expanded.
+
+2.1.0.0 - 07/21/2021
+ConvertColor return value is upper case.
+GetNodeIndex properly increments count if initial count is null.
+AddCellStyle properly increments CellStyles count if initial count is null.
+WorksheetCollection constructor is now public.
+parameterized Range constructors are now public.
+CreateStyleElementTemplate returns the first defined element of the appropriate type before resorting to creating a blank element.
+Range.SetBorder() - fixed top border color.
