@@ -595,7 +595,9 @@ namespace SamuraiTools.OpenXml.Spreadsheet.Tests
                 document.AddWorkbookPart().Workbook = new Workbook(new Sheets(new Sheet() { Id = "rId1", SheetId = 1U, Name = "TestSheet" }));
                 var worksheet = new Worksheet(new SheetData(new Row(new Cell() { CellReference = "A1" }) { RowIndex = 1U }));
                 document.WorkbookPart.AddNewPart<WorksheetPart>("rId1").Worksheet = worksheet;
-                sourceStream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("SamuraiTools.OpenXmlTests.logo.jpg");
+                //sourceStream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("SamuraiTools.OpenXmlTests.logo.jpg");
+                sourceStream = new MemoryStream();
+                System.Drawing.SystemIcons.WinLogo.Save(sourceStream);
 
                 worksheet.AddImage(sourceStream, string.Empty, 1, 1);
 

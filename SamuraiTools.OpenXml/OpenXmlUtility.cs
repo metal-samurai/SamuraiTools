@@ -154,7 +154,7 @@ namespace SamuraiTools.OpenXml
                 //Border border;
 
                 CellStyles cellStyles = stylesheet.Elements<CellStyles>().SingleOrDefault() ?? stylesheet.Elements<CellFormats>().Single().InsertAfterSelf(new CellStyles() { Count = 0U });
-                cellStyles.Count ??= (uint)cellStyles.ChildElements.Count;
+                if (cellStyles.Count == null) cellStyles.Count = (uint)cellStyles.ChildElements.Count;
 
                 CellFormat cellStyleFormat;
                 CellStyle cellStyle;
@@ -482,7 +482,7 @@ namespace SamuraiTools.OpenXml
                     if (item != null)
                     {
                         item.Remove();
-                        shareStringTablePart.SharedStringTable.Count ??= (uint)shareStringTablePart.SharedStringTable.ChildElements.Count;
+                        if (shareStringTablePart.SharedStringTable.Count == null) shareStringTablePart.SharedStringTable.Count = (uint)shareStringTablePart.SharedStringTable.ChildElements.Count;
                         shareStringTablePart.SharedStringTable.Count--;
 
                         // Refresh all the shared string references.

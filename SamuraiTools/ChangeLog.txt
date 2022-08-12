@@ -12,3 +12,6 @@ added Com namespace with ComHelper class.
 SQLDBConnection - removed query, dbAdapter, and dbDataSet. these cause problems when using a persistent connection in a multi-threaded environment.
  - renamed to SqlDbConnection to conform to current naming convention.
 removed Forms namespace, will be a separate assembly.
+
+2.1 - 08/12/2022
+target .net standard 2.0 - should have been that way in the first place.

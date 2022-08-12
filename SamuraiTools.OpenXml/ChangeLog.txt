@@ -23,3 +23,6 @@ WorksheetCollection constructor is now public.
 parameterized Range constructors are now public.
 CreateStyleElementTemplate returns the first defined element of the appropriate type before resorting to creating a blank element.
 Range.SetBorder() - fixed top border color.
+
+2.2.0.0 - 08/12/2022
+target .net standard 2.0 - should have been that way in the first place.

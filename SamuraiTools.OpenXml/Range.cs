@@ -125,7 +125,7 @@ namespace SamuraiTools.OpenXml.Spreadsheet
                     break;
 
                 case RangeType.Column:
-                    Column ??= Worksheet.Columns(StartColumn.Value);
+                    if (Column == null) Column = Worksheet.Columns(StartColumn.Value);
 
                     if (IsMissingCells)
                     {
@@ -139,7 +139,7 @@ namespace SamuraiTools.OpenXml.Spreadsheet
                     break;
 
                 case RangeType.Row:
-                    Row ??= Worksheet.Rows(StartRow.Value);
+                    if (Row == null) Row = Worksheet.Rows(StartRow.Value);
 
                     if (IsMissingCells)
                     {
@@ -519,52 +519,52 @@ namespace SamuraiTools.OpenXml.Spreadsheet
             {
                 if (leftBorderStyle != null)
                 {
-                    border.LeftBorder ??= new LeftBorder();
+                    if (border.LeftBorder == null) border.LeftBorder = new LeftBorder();
                     border.LeftBorder.Style = new EnumValue<BorderStyleValues>(leftBorderStyle.Value);
                 }
                 if (leftBorderColor != null)
                 {
-                    border.LeftBorder ??= new LeftBorder();
+                    if (border.LeftBorder == null) border.LeftBorder = new LeftBorder();
                     border.LeftBorder.Color = new Color() { Rgb = new HexBinaryValue(leftBorderColor) };
                 }
                 if (rightBorderStyle != null)
                 {
-                    border.RightBorder ??= new RightBorder();
+                    if (border.RightBorder == null) border.RightBorder = new RightBorder();
                     border.RightBorder.Style = new EnumValue<BorderStyleValues>(rightBorderStyle.Value);
                 }
                 if (rightBorderColor != null)
                 {
-                    border.RightBorder ??= new RightBorder();
+                    if (border.RightBorder == null) border.RightBorder = new RightBorder();
                     border.RightBorder.Color = new Color() { Rgb = new HexBinaryValue(rightBorderColor) };
                 }
                 if (topBorderStyle != null)
                 {
-                    border.TopBorder ??= new TopBorder();
+                    if (border.TopBorder == null) border.TopBorder = new TopBorder();
                     border.TopBorder.Style = new EnumValue<BorderStyleValues>(topBorderStyle.Value);
                 }
                 if (topBorderColor != null)
                 {
-                    border.TopBorder ??= new TopBorder();
+                    if (border.TopBorder == null) border.TopBorder = new TopBorder();
                     border.TopBorder.Color = new Color() { Rgb = new HexBinaryValue(topBorderColor) };
                 }
                 if (bottomBorderStyle != null)
                 {
-                    border.BottomBorder ??= new BottomBorder();
+                    if (border.BottomBorder == null) border.BottomBorder = new BottomBorder();
                     border.BottomBorder.Style = new EnumValue<BorderStyleValues>(bottomBorderStyle.Value);
                 }
                 if (bottomBorderColor != null)
                 {
-                    border.BottomBorder ??= new BottomBorder();
+                    if (border.BottomBorder == null) border.BottomBorder = new BottomBorder();
                     border.BottomBorder.Color = new Color() { Rgb = new HexBinaryValue(bottomBorderColor) };
                 }
                 if (diagonalBorderStyle != null)
                 {
-                    border.DiagonalBorder ??= new DiagonalBorder();
+                    if (border.DiagonalBorder == null) border.DiagonalBorder = new DiagonalBorder();
                     border.DiagonalBorder.Style = new EnumValue<BorderStyleValues>(diagonalBorderStyle.Value);
                 }
                 if (diagonalBorderColor != null)
                 {
-                    border.DiagonalBorder ??= new DiagonalBorder();
+                    if (border.DiagonalBorder == null) border.DiagonalBorder = new DiagonalBorder();
                     border.DiagonalBorder.Color = new Color() { Rgb = new HexBinaryValue(diagonalBorderColor) };
                 }
                 if (diagonalUp != null)
@@ -611,22 +611,22 @@ namespace SamuraiTools.OpenXml.Spreadsheet
             {
                 if (horizontalAlignment != null)
                 {
-                    formatTemplate.Alignment ??= new Alignment();
+                    if (formatTemplate.Alignment == null) formatTemplate.Alignment = new Alignment();
                     formatTemplate.Alignment.Horizontal = new EnumValue<HorizontalAlignmentValues>(horizontalAlignment);
                 }
                 if (verticalAlignment != null)
                 {
-                    formatTemplate.Alignment ??= new Alignment();
+                    if (formatTemplate.Alignment == null) formatTemplate.Alignment = new Alignment();
                     formatTemplate.Alignment.Vertical = new EnumValue<VerticalAlignmentValues>(verticalAlignment);
                 }
                 if (indent != null)
                 {
-                    formatTemplate.Alignment ??= new Alignment();
+                    if (formatTemplate.Alignment == null) formatTemplate.Alignment = new Alignment();
                     formatTemplate.Alignment.Indent = (uint)indent;
                 }
                 if (wrap != null)
                 {
-                    formatTemplate.Alignment ??= new Alignment();
+                    if (formatTemplate.Alignment == null) formatTemplate.Alignment = new Alignment();
                     formatTemplate.Alignment.WrapText = new BooleanValue(wrap);
                 }
 
